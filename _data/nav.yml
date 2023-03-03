@@ -1,0 +1,9 @@
+nav:
+  - name: About
+    link: /
+  - name: Team
+    link: /team
+  - name: Join us
+    link: /join
+  - name: Become a Sponsor
+    link: /sponsor

@@ -1,0 +1,133 @@
+---
+title: Home
+layout: default
+---
+<!-- Start Hero -->
+<section class="relative table w-full py-36 lg:py-44 text-center">
+    <div class="container">
+        <div class="grid md:grid-cols-12 grid-cols-1 items-center mt-10 gap-[30px] text-center">
+            <div class="md:col-span-12 self-stretch justify-self-stretch">
+                <!-- <div class="ltr:md:mr-6 rtl:md:ml-6"> -->
+                    <!-- <h4 class="font-semibold lg:leading-normal leading-normal text-4xl lg:text-5xl mb-5 text-black dark:text-white">Our Creativity Is Your <span class="text-green-600">Success</span></h4>
+                    <p class="text-slate-400 text-lg max-w-xl">Launch your campaign and benefit from our expertise on designing and managing conversion centered Tailwind CSS v3.x html page.</p> -->
+                    
+                        <img src="assets/images/logo_long_dark.png" class="inline-block dark:hidden" alt="">
+                        <img src="assets/images/logo_long_light.png" class="hidden dark:inline-block" alt="">
+                        <p class="text-slate-400 text-lg">Welcome to Electrium Mobility! Join us in our mission to create electric vehicles!</p>
+                        <a href="/join" class="btn bg-green-600 hover:bg-green-700 border-green-600 hover:border-green-700 text-white rounded-md ltr:mr-2 rtl:ml-2 mt-2"><i class="uil uil-envelope"></i>Join us</a>
+                        <a href="/sponsor" class="btn bg-transparent hover:bg-green-600 border-green-600 text-green-600 hover:text-white rounded-md mt-2"><i class="uil uil-book-alt"></i> Become a Sponsor</a>
+                <!-- </div> -->
+            </div>
+
+            <!-- <div class="md:col-span-5">
+                <img src="assets/images/illustrator/Startup_SVG.svg" alt="">
+            </div>end col -->
+        </div><!--end grid-->
+    </div><!--end container-->
+</section><!--end section-->
+<!-- End Hero -->
+
+<!-- Business Partner -->
+<section class="py-6 border-t border-b border-gray-100 dark:border-gray-700">
+    <div class="container">
+        <div class="grid md:grid-cols-6 grid-cols-2 justify-center gap-[30px]">
+            {% for sponsor in site.data.sponsors.sponsors %}
+            <div class="mx-auto py-4">
+                <img src="{{ sponsor.image }}" class="h-6" alt="{{ sponsor.name }}">
+            </div>
+            {% endfor %}
+            <!-- <div class="mx-auto py-4">
+                <img src="assets/images/client/amazon.svg" class="h-6" alt="">
+            </div>
+
+            <div class="mx-auto py-4">
+                <img src="assets/images/client/google.svg" class="h-6" alt="">
+            </div>
+            
+            <div class="mx-auto py-4">
+                <img src="assets/images/client/lenovo.svg" class="h-6" alt="">
+            </div>
+            
+            <div class="mx-auto py-4">
+                <img src="assets/images/client/paypal.svg" class="h-6" alt="">
+            </div>
+            
+            <div class="mx-auto py-4">
+                <img src="assets/images/client/shopify.svg" class="h-6" alt="">
+            </div>
+            
+            <div class="mx-auto py-4">
+                <img src="assets/images/client/spotify.svg" class="h-6" alt="">
+            </div> -->
+        </div><!--end grid-->
+    </div><!--end container-->
+</section><!--end section-->
+<!-- Business Partner -->
+
+<!-- Start -->
+<section class="relative md:py-24 py-16 bg-gray-50 dark:bg-slate-800">
+    <div class="container">
+        <div class="grid grid-cols-1 pb-8 text-center">
+            <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Our Mission</h3>
+
+            <p class="text-slate-400 max-w-xl mx-auto">Electrium Mobility aims to teach how to create electric vehicles in a beginner friendly way.</p>
+        </div><!--end grid-->
+
+        <div class="grid md:grid-cols-3 justify-center text-center gap-[30px]">
+            <div>
+                <img src="/assets/images/svgs/portability.svg">
+                <h4 class="mb-3 text-2xl md:leading-normal leading-normal font-bold">Portability</h4>
+                <p class="text-slate-600 max-w-xl mx-auto">Our vehicles are by design, incredibly easy to carry around</p>
+            </div>
+            <div>
+                <img src="/assets/images/svgs/sustainability.svg">
+                <h4 class="mb-3 text-2xl md:leading-normal leading-normal font-bold">Sustainability</h4>
+                <p class="text-slate-600 max-w-xl mx-auto">We care about the environment so our vehicles use electricity</p>
+            </div>
+            <div>
+                <img src="/assets/images/svgs/affordability.svg">
+                <h4 class="mb-3 text-2xl md:leading-normal leading-normal font-bold">Affordability</h4>
+                <p class="text-slate-600 max-w-xl mx-auto">Our vehicles are fairly low cost to make</p>
+            </div>
+
+        </div>
+
+
+        
+        </div><!--end grid-->
+    </div><!--end container-->
+</section><!--end section-->
+
+<section class="relative md:py-24 py-16 bg-gray-100 dark:bg-slate-900">
+    <div class="container">
+        <div class="grid md:grid-cols-2 justify-items-center align-items-center place-content-evenly pb-8">
+            <div>
+                <h3 class="mb-3 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Who we are</h3>
+                <p class="text-slate-400 max-w-xl mx-auto">We are a group of students united by a common goal of creating better modes of transportation for
+                    the world!
+                </p>
+            </div>
+            <div>
+                <img src="/assets/images/svgs/who_we_are.svg" width="50%">
+            </div>
+            <div>
+                <img src="/assets/images/svgs/what_we_do.svg" width="50%">
+            </div>
+            <div>
+                <h3 class="mb-3 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">What we do</h3>
+                <p class="text-slate-400 max-w-xl mx-auto">We create electric vehicles such as bikes, skateboards, scooters, etc. from scratch, 
+                    allowing us to walk students through the entire design process
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="relative md:py-24 py-16 bg-gray-50 dark:bg-slate-800">
+    <div class="grid grid-cols-1 items-center text-center">
+        <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Interested in our work?</h3>
+        <div class="grid-cols-12">
+            <a href="mailto:{{ site.email }}" class="btn bg-green-600 hover:bg-green-700 border-green-600 hover:border-green-700 text-white rounded-md ltr:mr-2 rtl:ml-2 mt-2">Contact us</a>
+        </div>
+    </div>
+</section>
+<!-- End -->
