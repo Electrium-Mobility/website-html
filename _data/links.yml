@@ -1,0 +1,17 @@
+nav:
+  - name: About
+    link: /
+  - name: Team
+    link: /team
+  - name: Join us
+    link: /join
+  - name: Become a Sponsor
+    link: /sponsor
+
+socials:
+  - name: Instagram
+    link: https://www.instagram.com/electriummobility/
+  - name: Linkedin
+    link: https://www.linkedin.com/company/electrium-mobility
+  - name: Github
+    link: https://github.com/Electrium-Mobility/
