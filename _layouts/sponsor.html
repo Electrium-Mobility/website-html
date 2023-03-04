@@ -1,0 +1,43 @@
+---
+title: Sponsor
+layout: default
+---
+<section class="relative table w-full py-36 lg:py-44">
+    <div class="container">
+        <div class="grid grid-cols-2">
+            <div class="justify-self-start">
+                <h2 class="md:text-5xl text-4xl md:leading-normal leading-normal font-medium">Our Sponsors</h2>
+                <p class="text-lg md:leading-normal leading-normal font-medium">Interested in sponsoring our projects?</p>
+            </div>
+            <div class="grid-cols-12 mx-8">
+                <a href="mailto:{{site.email}}" class="float-right btn bg-transparent hover:bg-green-600 border-green-600 text-green-600 hover:text-white rounded-md mt-2">Become a Sponsor</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="relative md:py-24 py-16 bg-gray-100 dark:bg-slate-900">
+    <div class="container">
+        <h3 class="md:text-3xl md:leading-normal text-2xl leading-normal font-bold pb-4">Our Sponsors</h3>
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[30px]">
+            {% for sponsor in site.data.sponsors.sponsors %}
+                <a target="_blank" alt="{{ sponsor.name }}" href="{{ sponsor.site }}"><img src="{{ sponsor.image }}"></a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="relative table w-full py-36 lg:py-44">
+    <div class="container">
+        <div class="grid md:grid-cols-2 grid-cols-1 items-center mt-10 gap-[30px]">
+            <div>
+                <h3 class="md:text-3xl md:leading-normal text-2xl leading-normal font-bold pb-2">Contact us</h3>
+                <p>Get in touch with us!</p>
+                <a href="mailto:{{site.email}}"><h4 class="mb-6 text-2xl md:leading-normal leading-normal font-semibold">{{ site.email }}</h4></a>
+            </div>
+            <div>
+                <img src="/assets/images/mail.png">
+            </div>
+        </div>
+    </div>
+</section>
