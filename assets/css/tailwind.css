@@ -2901,6 +2901,7 @@ video {
 .tracking-\[1px\]{
   letter-spacing: 1px !important;
 }
+
 .text-slate-400{
   --tw-text-opacity: 1 !important;
   color: rgb(148 163 184 / var(--tw-text-opacity)) !important;

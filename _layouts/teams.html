@@ -1,0 +1,50 @@
+---
+title: Team
+layout: default
+---
+<section class="relative table w-full py-36 lg:py-44">
+    <div class="container">
+        <div class="grid grid-cols-2">
+            <div>
+                <h2 class="md:text-5xl text-4xl md:leading-normal leading-normal font-medium">Meet the Team</h2>
+                <p class="text-lg md:leading-normal leading-normal font-medium">Meet out team of dedicated students!</p>
+                <div class="grid-cols-12">
+                    <a href="/join" class="btn bg-transparent hover:bg-green-600 border-green-600 text-green-600 hover:text-white rounded-md mt-2">Join us</a>
+                </div>
+            </div>
+            <div></div>
+        </div>
+    </div>
+</section>
+
+<section class="relative md:py-24 py-16 bg-gray-100 dark:bg-slate-900">
+    <div class="container">
+        <div class="">
+            {% for team in site.data.teams.teams %}
+                <h4 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">{{ team.name }}</h4>
+                <p>{{ team.description }}</p>
+                <div class="grid-cols-5">
+                    {% for member in team.members %}
+                        <div class="inline-block w-32 do-stuff-on-hover">
+                            <div class="member-image-description-text inline absolute flex items-center justify-center rounded-full inline-block w-32">{{member.description}}</div>
+                            <img class="do-thing-on-hover rounded-full" src="{{member.image}}">
+                            <p class="md:leading-normal leading-normal font-bold">{{member.name}}</p>
+                            <p class="md:leading-normal leading-normal font-semibold text-slate-400">{{member.role}}</p>
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="relative table w-full py-36 lg:py-44">
+    <div class="container">
+        <div class="grid grid-cols-1 items-center text-center">
+            <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">What are you waiting for?</h3>
+            <div class="grid-cols-12">
+                <a href="/join" class="btn bg-green-600 hover:bg-green-700 border-green-600 hover:border-green-700 text-white rounded-md ltr:mr-2 rtl:ml-2 mt-2">Join us</a>
+            </div>
+        </div>
+    </div>
+</section>

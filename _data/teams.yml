@@ -1,6 +1,23 @@
 teams:
   - name: Team One
-  - description: asdasiod
-  - members:
+    description: asdasiod
+    members:
     - name: person
-    - role: alsdjnasd
+      role: alsdjnasd
+      description: ashduiahsdiasd isdg isgd ugsdf isdfi shdf isdjsbdi sdb sdib kj isd b
+      image: /assets/images/logo.png
+    - name: person
+      role: alsdjnasd
+      description: ashduiahsdiasd
+      image: /assets/images/logo.png
+  - name: Team Two
+    description: asdasiod
+    members:
+    - name: person
+      role: alsdjnasd
+      description: ashduiahsdiasd
+      image: /assets/images/logo.png
+    - name: person
+      role: alsdjnasd
+      description: ashduiahsdiasd
+      image: /assets/images/logo.png
