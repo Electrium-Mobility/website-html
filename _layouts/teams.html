@@ -8,17 +8,17 @@ layout: default
             <div>
                 <h2 class="md:text-5xl text-4xl md:leading-normal leading-normal font-medium">Meet the Team</h2>
                 <p class="text-lg md:leading-normal leading-normal font-medium">Meet out team of dedicated students!</p>
-                <div class="grid-cols-12">
-                    <a href="/join" class="btn bg-transparent hover:bg-green-600 border-green-600 text-green-600 hover:text-white rounded-md mt-2">Join us</a>
-                </div>
             </div>
-            <div></div>
+            <div class="grid-cols-12 justify-content-end">
+                <a href="/join" class="btn bg-transparent hover:bg-green-600 border-green-600 text-green-600 hover:text-white rounded-md mt-2 justify-self-end">Join us</a>
+            </div>
         </div>
     </div>
 </section>
 
 <section class="relative md:py-24 py-16 bg-gray-100 dark:bg-slate-900">
     <div class="container">
+        <h3 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Teams</h3>
         <div class="">
             {% for team in site.data.teams.teams %}
                 <h4 class="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">{{ team.name }}</h4>
