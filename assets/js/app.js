@@ -29,6 +29,11 @@
 
 window.addEventListener('load', fn, false)
 const chk = document.getElementById('chk');
+
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    changeTheme();
+}
+
 const switcher = document.getElementById("theme-mode")
 function changeTheme(){
     const htmlTag = document.getElementsByTagName("html")[0]
