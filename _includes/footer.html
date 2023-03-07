@@ -14,7 +14,7 @@
         <div class="grid grid-cols-12">
             <div class="col-span-12">
                 <div class="py-[60px] px-0">
-                    <div class="grid md:grid-cols-3 grid-cols-3 gap-[30px]">
+                    <div class="grid md:grid-cols-3 grid-cols-2">
                         <!-- <div class="lg:col-span-4 md:col-span-12">
                             <a href="#" class="text-[22px] focus:outline-none">
                                 <img src="assets/images/logo-light.png" alt="">
@@ -35,7 +35,7 @@
                 
                         <div>
                             <!-- <h5 class="tracking-[1px] text-gray-100 font-semibold">Company</h5> -->
-                            <ul class="list-none footer-list mt-6">
+                            <ul class="list-none footer-list mt-6 pb-4">
                                 {% for link in site.data.links.nav %}
                                 <li class="mt-[10px]"><a href="{{link.link}}" class="text-gray-300 hover:text-gray-400 duration-500 ease-in-out font-bold" target="_blank">{{ link.name }}</a></li>
                                 {% endfor %}

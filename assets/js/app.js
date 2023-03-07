@@ -32,6 +32,7 @@ const chk = document.getElementById('chk');
 
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
     changeTheme();
+    chk.checked = true;
 }
 
 const switcher = document.getElementById("theme-mode")
@@ -318,7 +319,7 @@ function changeTheme(){
  /*********************/
  try {
  
-    //  switcher?.addEventListener("click" ,changeTheme )
+     switcher?.addEventListener("click" ,changeTheme )
      
  
      chk.addEventListener('change',changeTheme);

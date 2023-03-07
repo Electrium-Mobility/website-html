@@ -28,8 +28,8 @@ layout: default
                 <p>{{ team.description }}</p>
                 <div class="grid-cols-5">
                     {% for member in team.members %}
-                        <div class="inline-block w-32 do-stuff-on-hover">
-                            <div class="member-image-description-text inline absolute flex items-center justify-center rounded-full inline-block w-32">{{member.description}}</div>
+                        <div class="inline-block w-32 do-stuff-on-hover mr-4">
+                            <div class="member-image-description-text">{{member.description}}</div>
                             <img class="do-thing-on-hover rounded-full" src="{{member.image}}">
                             <p class="md:leading-normal leading-normal font-bold">{{member.name}}</p>
                             <p class="md:leading-normal leading-normal font-semibold text-slate-400">{{member.role}}</p>
